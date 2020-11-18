@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Componentes A-FRAME</title>
+    <link rel="stylesheet" href="" />
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="js/componentes.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+
+      <a-camera>
+        <a-cursor fuse="false"></a-cursor>
+    </a-camera>
+    <a-sky color="skyblue"></a-sky>
+
+      <a-box mi_componente="defaultColor:#000: interval:100" color="violet" arc="230" position="-2 0.5 -3" rotation="0 45 0" animation>
+        <a-animation
+          attribute="rotation"
+          repeat="indefinite"
+          from="0 0 0"
+          to="10 90 0"
+        ></a-animation>
+      </a-box>
+
+      <a-box
+        mi_componente="defaultColor:#000: interval:100"
+        position="0 0 -4"
+        color="violet"
+        arc="230"
+        radius="4"
+        radius-tubular="0.2"
+      ></a-box>
+
+      <a-box 
+        mi_componente="defaultColor:#000: interval:100" 
+        color="violet" 
+        arc="230" 
+        position="2 0.5 -3" 
+        rotation="0 45 0" 
+        position="-2 0 -6" 
+        material="opacity: 0.6"
+        animation  >
+        <a-animation
+          attribute="rotation"
+          repeat="indefinite"
+          from="-0.5 2 4"
+          to="0 360 0"
+          direction="alternate"
+          dur="3000"
+        >
+        </a-animation
+        ></a-box>      
+    </a-scene>
+  </body>
+</html>
