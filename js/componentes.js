@@ -1,6 +1,6 @@
 AFRAME.registerComponent('mi_componente', {  
     schema: {
-      interval: { type: 'number', default: 1000 },
+      interval: { type: 'number', default: 5000 },
       defaultColor: { type: 'color', default: '#fff' }
     },
     
